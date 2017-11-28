@@ -1,0 +1,87 @@
+.ty-tabs {
+    margin-bottom: -1px;
+    border: none;
+
+    &__item {
+        margin-right: 0;
+        border: 1px solid @border;
+        border-left: none;
+        border-radius: 2px 2px 0 0;
+        background: #fff;
+
+        .ty-tabs__a {
+            font-size: 14px;
+            font-weight: bold;
+            padding: 8px 21px 2px;
+            color: @links_hover;
+        }
+
+        &.active {
+            border-bottom-color: #fff;
+            background: #fff;
+
+            .ty-tabs__a {
+                font-size: 14px;
+                font-weight: bold;
+                color: @links_hover;
+            }
+        }
+
+        &:hover {
+            background: #fff;
+        }
+
+        &:first-child {
+            border-left: 1px solid @border;
+        }
+    }
+
+    &__content {
+        padding: 15px 23px;
+        border: 1px solid @border;
+        background: #fff;
+    }
+}
+
+.tabs-content {
+    border-top: 1px solid @border;
+    background: #fff;
+}
+
+.ty-checkout__billing-tabs {
+    .tabs-content {
+        background: none;
+    }
+}
+
+.ty-accordion {
+    .ui-accordion-header {
+        font-size: 15px;
+        color: @primary_button;
+        border: 1px solid @primary_button;
+        background: #fff;
+
+        &.ui-state-active {
+            color: #fff;
+            background: @primary_button;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .ty-tabs__item {
+        .ty-tabs__a {
+            font-size: 15px;
+            color: @primary_button;
+            border: 1px solid @primary_button;
+            background: #fff;
+        }
+
+        &.active {
+            .ty-tabs__a {
+                color: #fff;
+                background: @primary_button;
+            }
+        }
+    }
+}

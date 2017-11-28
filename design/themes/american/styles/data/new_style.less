@@ -1,0 +1,194 @@
+@rounded_corners: true;
+@links: #333333;
+@menu_links: #393939;
+@menu: #ffffff;
+@menu_alt: #4b621a;
+@base: #edf2f5;
+@font: #333333;
+@primary_button: #2688c1;
+@secondary_button: #00529e;
+@tertiary_button: #BDC3C7;
+@sidebar: #fff;
+@price: #000;
+@discount_label: #50a4d0;
+@in_stock: #27ae60;
+@out_of_stock: #a80006;
+@top_panel_links: #393939;
+@top_panel_text: #393939;
+@footer_text: #bdc3c7;
+@decorative: #46aaf2;
+
+@general_bg_color: #fafdff;
+@general_bg_image: transparent;
+@general_bg_repeat: repeat;
+@general_bg_scroll: scroll;
+
+@top_panel_bg: #ffffff;
+@top_panel_bg_full: true;
+@top_panel_bg_transparent: false;
+@top_panel_bg_grad_stop: #ffffff;
+
+@header_bg: #f4f4f4;
+@header_bg_full: true;
+@header_bg_transparent: false;
+@header_bg_grad_stop: #f4f4f4;
+
+@content_bg: #f4f4f4;
+@content_bg_full: false;
+@content_bg_transparent: true;
+
+@footer_bg: #ffffff;
+@footer_bg_full: true;
+@footer_bg_transparent: false;
+@footer_bg_grad_stop: #fff;
+
+@body_font: Roboto,sans-serif;
+@body_font_size: 14px;
+@body_font_style: normal;
+@body_font_weight: normal;
+@headings_font: Roboto,sans-serif;
+@headings_font_size: 24px;
+@headings_font_decoration: none;
+@headings_font_style: normal;
+@headings_font_weight: normal;
+@links_font: Roboto,sans-serif;
+@links_font_size: 13px;
+@links_font_decoration: none;
+@links_font_style: normal;
+@links_font_weight: normal;
+@price_font: Roboto,sans-serif;
+@price_font_size: 24px;
+@price_font_decoration: none;
+@price_font_style: normal;
+@price_font_weight: bold;
+@buttons_font: Roboto,sans-serif;
+@buttons_font_size: 14px;
+@buttons_font_decoration: none;
+@buttons_font_style: normal;
+@buttons_font_weight: normal;
+
+@color-cr-phone: #b40000;
+
+
+.ty-cr-phone {
+    span,
+    .ty-cr-phone-prefix {
+        color: @color-cr-phone;
+    }
+}
+
+.ty-sidebox {
+    &__title {
+        padding-right: 0;
+        text-align: center;
+    }
+}
+
+.ty-product-block {
+    &__button {
+        .ty-btn {
+            &,
+            & ~ .ty-btn {
+                margin-left: 0;
+            }
+
+
+            &__text {
+                &,
+                &:hover,
+                &:active {
+                    padding-left: 5px;
+                    padding-right: 5px;
+                }
+            }
+        }
+    }
+}
+
+.grid-list {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.ty-grid-list {
+    &__item {
+        margin: 5px;
+        border: 0;
+        box-shadow: 0 1px 3px 0px rgba(0, 0, 0, 0.2);
+        .transition(box-shadow 150ms);
+
+        &:hover {
+            box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.3);
+        }
+    }
+}
+
+.ty-menu-vertical,
+.no-touch .ty-menu-vertical {
+    .ty-menu {
+        &__items {
+            box-shadow: 0 1px 3px 0px rgba(0, 0, 0, 0.2);
+        }
+
+        &__item {
+            &:hover {
+                & > .ty-menu__submenu-item-header .ty-menu__item-link {
+                    background: @menu_alt;
+                    color: #fff;
+                }
+
+                & > .ty-menu__item-arrow i {
+                    color: #fff;
+                }
+            }
+        }
+
+        &__submenu {
+            .ty-menu__item {
+                &:hover {
+                    & > .ty-menu__submenu-item-header .ty-menu__item-link {
+                        background: @menu_alt;
+                        color: #fff;
+                    }
+
+                    & > .ty-menu__item-arrow i {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        &__submenu-items {
+            border: 0;
+            box-shadow: 0 1px 3px 0px rgba(0, 0, 0, 0.2);
+        }
+    }
+}
+
+.footer-copyright {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    a {
+        color: @color-cr-phone;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+
+
+
+
+
+/*GFONTS*/
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(//fonts.gstatic.com/s/roboto/v18/Y5yuUJGDLtmYv2_3fMB4fA.woff) format('woff');
+}
+
+/*/GFONTS*/

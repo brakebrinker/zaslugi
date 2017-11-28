@@ -1,0 +1,49 @@
+.top-my-account {
+    &.ty-dropdown-box {
+        margin-top: 5px;
+        margin-left: 0;
+    }
+
+    .ty-dropdown-box {
+        &__title {
+            margin-bottom: -1px;
+            padding: 7px 7px 13px 15px;
+
+            &:hover {
+                background: none;
+            }
+
+            &.open {
+                border: 1px solid @dropdown_box_border;
+                border-bottom-color: transparent;
+                background: #fff;
+                -moz-box-shadow: -2px -1px 1px @my_account_shadow, 2px -1px 1px @my_account_shadow;
+                -webkit-box-shadow: -2px -1px 1px @my_account_shadow, 2px -1px 1px @my_account_shadow;
+                box-shadow: -2px -1px 1px @my_account_shadow, 2px -1px 1px @my_account_shadow;
+            }
+        }
+
+        &__content {
+            margin-top: 0;
+            border: 1px solid @dropdown_box_border;
+            .box-shadow(0px 0px 7px @dropdown_box_border);
+        }
+    }
+
+    .ty-icon-user {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .top-my-account {
+        .ty-icon-user {
+            display: inline-block;
+            color: @font;
+        }
+
+        .ty-dropdown-box__title.open i {
+            color: @font;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+.owl-theme {
+    .owl-controls {
+        .owl-page {
+            span {
+                margin: 5px 10px;
+                opacity: 0.7;
+                background: @owl_carousel_item;
+            }
+
+            &.active {
+                span {
+                    opacity: 1;
+                }
+            }
+        }
+
+        &-outside {
+            .owl-buttons {
+                div {
+                    width: auto;
+                    height: auto;
+                    margin: 0;
+                    padding: 0 0 0 14px;
+                    background: none;
+                }
+
+                i:before {
+                    display: inline-block;
+                    width: 31px;
+                    height: 21px;
+                }
+            }
+        }
+    }
+}

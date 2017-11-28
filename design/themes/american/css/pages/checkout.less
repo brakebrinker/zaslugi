@@ -1,0 +1,186 @@
+.ty-subheader {
+    font-weight: normal;
+    color: @font;
+}
+
+.ty-step__container-active {
+    background: #fff;
+}
+
+.ty-step__title {
+    border: 1px solid @primary_button;
+    background: #fff;
+
+    & &-txt {
+        font-size: 18px;
+        color: @primary_button;
+    }
+
+    &-left {
+        margin-top: -2px;
+        color: @primary_button;
+        background: none;
+
+        &:after {
+            content: '.';
+        }
+    }
+
+    &-active {
+        margin-bottom: 0;
+        border-radius: 2px 2px 0 0;
+        background: @primary_button;
+
+        .ty-step__title-txt {
+            font-size: 18px;
+            color: #fff;
+        }
+
+        .ty-step__title-left {
+            margin-top: -2px;
+            color: #fff;
+            background: none;
+        }
+    }
+
+    &-arrow {
+        top: 40px;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        color: @primary_button;
+        border: 8px solid transparent;
+        border-top: 8px solid @primary_button;
+        border-left: 8px solid @primary_button;
+
+        &:before {
+            content: '';
+        }
+    }
+
+    &-complete {
+        background: #fff;
+
+        .ty-step__title-txt {
+            font-size: 18px;
+            color: @primary_button;
+        }
+
+        .ty-step__title-left {
+            margin-top: -2px;
+            color: @primary_button;
+
+            &:after {
+                content: '';
+            }
+        }
+
+        .ty-step__title-right {
+            .ty-btn__secondary {
+                top: 2px;
+                color: @primary_button;
+                background: none;
+
+                &:hover {
+                    background: none;
+                }
+            }
+        }
+    }
+}
+
+.ty-step__body-active {
+    border: 1px solid @border;
+    border-top: none;
+}
+
+.ty-profile-field__switch {
+    border-color: @border;
+}
+
+.ty-checkout-buttons {
+    border-color: @border;
+}
+
+.ty-checkout__title-icon {
+    color: @primary_button;
+}
+
+.ty-payments-list__item-group {
+    color: @font;
+}
+
+.ty-order-info__profile-field {
+    border: 1px solid @border;
+    background: #fff;
+}
+
+.ty-checkout-complete__order-success {
+    a {
+        color: @links_hover;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+/*/Checkout*/
+
+/*Order*/
+.ty-table {
+    border-color: @border;
+    border-right: 1px solid @border;
+    border-bottom: 1px solid @border;
+
+    th,
+    td {
+        border: none;
+        border-bottom: 1px solid @border;
+    }
+
+    th {
+        background: #fff;
+    }
+
+    .ty-orders-detail__table {
+        &-price,
+        &-quantity,
+        &-subtotal {
+            text-align: right;
+        }
+    }
+}
+
+.ty-orders-summary__wrapper {
+    border-color: @border;
+}
+
+.ty-section {
+    &__body {
+        border-color: @border;
+        background: #fff;
+
+        input[type="text"],
+        input[type="password"],
+        textarea,
+        select {
+            vertical-align: top;
+        }
+    }
+
+    &__title {
+        border: 1px solid @border;
+        background: #fff;
+    }
+
+    .buttons-container {
+        border-top: 1px solid @border;
+        background: #fff;
+    }
+}
+
+.ty-calendar__button {
+    color: @font;
+}

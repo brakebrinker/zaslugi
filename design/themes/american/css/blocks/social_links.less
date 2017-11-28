@@ -1,0 +1,36 @@
+h3.ty-social-link__title {
+    font: normal 22px Roboto, sans-serif;
+    margin-right: 50px;
+    color: @mainbox_simple_title;
+}
+
+.ty-social-link {
+    top: 0;
+    height: 49px;
+    margin-right: 10px;
+    vertical-align: middle;
+
+    a {
+        width: 49px;
+        height: 49px;
+        text-indent: -10000000px;
+        color: transparent;
+    }
+
+    i {
+        display: block;
+        padding-right: 0;
+
+        &:before {
+            display: block;
+            width: 49px;
+            height: 49px;
+            content: '';
+        }
+    }
+
+    &-block {
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+}

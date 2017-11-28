@@ -1,0 +1,98 @@
+.notification-content-extended {
+    h1 {
+        font-size: 20px;
+        color: @font;
+        border-color: @border;
+        border-radius: 6px 6px 0 0;
+        background: @popup_header_bg;
+    }
+}
+
+.ty-product-notification {
+    &__buttons {
+        border-top: 1px solid @border;
+        background: none;
+    }
+
+    &__image {
+        border: 1px solid @border;
+    }
+
+    &__product-name {
+        font-size: 15px;
+
+        &:hover {
+            text-decoration: underline;
+            color: @links_hover;
+        }
+    }
+}
+
+div.ui-dialog {
+    .ui-dialog-title {
+        font-size: 20px;
+    }
+
+    .ui-dialog-titlebar {
+        border-color: @border;
+        background: @popup_header_bg;
+    }
+
+    .ui-dialog-titlebar-close {
+        .ui-icon-closethick {
+            color: @font;
+        }
+
+        &.ui-state-hover {
+            .ui-icon-closethick:before {
+                color: @border;
+            }
+        }
+    }
+
+    .buttons-container {
+        border-top: 1px solid @border;
+        border-radius: 0 0 6px 6px;
+        background: none;
+    }
+
+    input.ty-product-list__bulk {
+        position: relative;
+        z-index: 1;
+        margin-top: -2px;
+        margin-right: 0;
+    }
+
+    .ty-product-list {
+        border-bottom: 1px solid @owl_carousel_item;
+
+        & + hr {
+            display: block;
+        }
+    }
+}
+
+.ty-cr-product-info {
+    &-image {
+        img {
+            border: 1px solid @border;
+        }
+    }
+
+    &-header {
+        .ty-product-block-title {
+            border: none;
+        }
+    }
+}
+
+.ui-widget {
+    button {
+        font-family: Roboto, sans-serif;
+        font-size: 16px;
+    }
+}
+
+.ui-dialog input[type="checkbox"] {
+    margin: -22px 6px -20px 0;
+}

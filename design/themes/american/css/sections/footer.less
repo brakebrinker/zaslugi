@@ -1,0 +1,112 @@
+.footer-stay-connected {
+    padding-bottom: 65px;
+    background: @footer_bg_stay_connected;
+
+    > .row-fluid {
+        padding-top: 20px;
+        border-top: 1px solid @border;
+    }
+}
+
+.container-fluid .ty-footer-grid__full-width {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.ty-footer-form-block {
+    margin-top: 20px;
+
+    &__title {
+        font: normal 22px Roboto, sans-serif;
+        color: @mainbox_simple_title;
+    }
+
+    .cm-hint {
+        font: normal 14px Roboto, sans-serif;
+        height: 50px;
+        padding: 10px 17px;
+        color: @footer_stay_connection_color;
+        border-color: @footer_stay_connection_border;
+        border-radius: 0;
+
+        &-focused {
+            height: 50px;
+
+            & + .ty-btn-go .ty-icon-right-dir,
+            & + span + .ty-btn-go .ty-icon-right-dir {
+                top: 14px;
+                left: 0;
+
+                &:before {
+                    display: block;
+                    width: 31px;
+                    height: 21px;
+                    content: '';
+                    background: url(@arrow-right-active) no-repeat;
+                    background-position: -411px -296px;
+                }
+            }
+        }
+    }
+
+    .ty-btn-go {
+        top: 0;
+        right: 8px;
+        height: 50px;
+        border: none;
+        background: none;
+    }
+
+    .ty-icon-right-dir {
+        top: 14px;
+        left: 0;
+
+        &:before {
+            display: block;
+            width: 31px;
+            height: 21px;
+            content: '';
+            background: url(@arrow-right-noactive) no-repeat;
+            background-position: -411px -266px;
+        }
+    }
+
+    &__form {
+        width: 450px;
+    }
+}
+
+.ty-footer-menu {
+    padding-top: 40px;
+    border-top: 1px solid @general_menu_border;
+
+    &__item {
+        margin: 0;
+        padding: 0;
+
+        a {
+            font: normal 14px/20px Roboto, sans-serif;
+            color: @footer_text_color;
+
+            &:hover {
+                text-decoration: underline;
+                color: @footer_text_color;
+            }
+        }
+    }
+}
+
+.ty-footer-general {
+    &__header {
+        cursor: default;
+
+        span {
+            font: normal 17px/20px Roboto, sans-serif;
+            color: @footer_text_color;
+        }
+    }
+
+    &__body {
+        margin-top: 15px;
+    }
+}

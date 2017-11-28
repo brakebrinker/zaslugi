@@ -1,0 +1,30 @@
+@alter_white: #fdfdfd;
+@black_silver: #333;
+
+.sd_calendar table tr{
+	background: @content_bg;
+}
+.sd_calendar table tr:nth-child(2n){
+	background: @alter_white;
+}
+.sd_calendar table tr td{
+	padding: 16px 24px;
+}
+.sd_calendar table tr td:last-child{
+	text-align: right;
+}
+.sd_calendar input{
+	height: 48px;
+}
+.sd_calendar .tabs-content{
+	border-top: 0;
+}
+.sd_calendar .ty-tabs__item.active{
+	background: @content_bg;
+	border-bottom-color: @content_bg; 
+}
+.sd_calendar .ty-tabs__item .ty-tabs__a{
+	font-weight: normal;
+	color: @black_silver;
+	padding: 8px 24px 2px;
+}

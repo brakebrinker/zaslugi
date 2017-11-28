@@ -1,0 +1,116 @@
+.ty-pagination {
+    margin: 0;
+    padding: 20px 0;
+    text-align: center;
+    background: none;
+
+    &__bottom {
+        margin-top: 20px;
+        border-top-color: @owl_carousel_item;
+    }
+
+    &__top {
+        margin-bottom: 20px;
+        border-bottom-color: @owl_carousel_item;
+    }
+
+    &__selected {
+        font: normal 16px/18px Roboto, sans-serif;
+        line-height: 35px;
+        width: 35px;
+        height: 35px;
+        padding: 0;
+        vertical-align: middle;
+        color: @links_hover;
+        background: none;
+    }
+
+    &__item {
+        font: normal 16px/18px Roboto, sans-serif;
+        line-height: 35px;
+        width: 35px;
+        height: 35px;
+        padding: 0;
+        vertical-align: middle;
+        color: @font;
+
+        &:hover {
+            padding: 0;
+            color: @font;
+            background: @content_bg;
+        }
+    }
+
+    &__btn {
+        line-height: 39px;
+        text-align: center;
+        vertical-align: middle;
+        border: 1px solid @owl_carousel_item;
+        border-radius: 3px;
+        background: #fff;
+
+        &:hover {
+            background: #fff;
+        }
+
+        .ty-pagination__text-arrow {
+            font-size: 0;
+            color: @owl_carousel_item;
+        }
+
+        &.ty-pagination__prev {
+            color: @links_hover;
+
+            .ty-pagination__text-arrow {
+                color: @links_hover;
+
+                &:before {
+                    font-size: 18px;
+                    content: "\e020";
+                }
+            }
+        }
+
+        &.ty-pagination__next {
+            .ty-pagination__text-arrow {
+                color: @links_hover;
+
+                &:before {
+                    font-size: 18px;
+                    content: "\e01f";
+                }
+            }
+        }
+
+        &:first-child {
+            .ty-pagination__text-arrow {
+                &:before {
+                    font-size: 18px;
+                    content: "\e020";
+                }
+            }
+        }
+
+        &:last-child {
+            .ty-pagination__text-arrow {
+                &:before {
+                    font-size: 18px;
+                    content: "\e01f";
+                }
+            }
+        }
+    }
+
+    &__text {
+        display: none;
+    }
+
+    &__text-arrow {
+        font: bold 18px/18px 'glyphs';
+
+    }
+
+    &__range {
+        display: none;
+    }
+}

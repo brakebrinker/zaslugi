@@ -1,0 +1,224 @@
+.ty-dropdown-box__content {
+    .ty-dropdown-box__item {
+        padding: 5px 3px;
+
+        &:hover {
+            text-decoration: underline;
+            color: @links_hover;
+            background: #fff;
+
+            a {
+                color: @links_hover;
+            }
+        }
+    }
+
+    .buttons-container {
+        border-top: 1px solid @border;
+        background: none;
+    }
+
+    .ty-account-info__buttons {
+        border-top: none;
+    }
+
+    .ty-account-info__item:hover {
+        .ty-account-info__a {
+            display: inline-block;
+            text-decoration: underline;
+        }
+    }
+
+    .ty-account-info__orders {
+        margin-top: 0;
+        padding: 11px 14px;
+        background: #fff;
+
+        &-txt {
+            padidng: 0 3px 5px;
+        }
+    }
+}
+
+.ty-dropdown-box {
+    &__title {
+        .ty-account-info__user-arrow {
+            color: @top_panel_links;
+        }
+
+        &.open {
+            .ty-account-info__user-arrow {
+                color: @top_panel_links;
+            }
+        }
+    }
+}
+
+.ty-account-info__orders-input {
+    .ty-input-text {
+        height: 46px;
+        color: @order_input_text;
+        border: 1px solid @input_border;
+        border-radius: 0;
+        background: #fff;
+
+        &:hover,
+        &:focus {
+            border-color: @links_hover;
+        }
+
+        &.cm-hint-focused {
+            & + .ty-btn-go,
+            & + span + .ty-btn-go {
+                background: none;
+
+                .ty-icon-right-dir {
+                    top: 0px;
+                    left: 0;
+
+                    &:before {
+                        display: block;
+                        width: 31px;
+                        height: 21px;
+                        content: '';
+                        background: url(@arrow-right-active) no-repeat;
+                        background-position: -411px -296px;
+                    }
+                }
+            }
+        }
+    }
+
+    .ty-btn-go {
+        top: 13px;
+        height: 21px;
+    }
+
+    .ty-btn-go__icon {
+        &:before {
+            content: '';
+        }
+    }
+}
+
+.ty-account-info {
+    margin: 15px 15px 0px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid @account_info_orders;
+
+    &__item {
+        padding: 5px 3px;
+
+        &:hover {
+            .ty-account-info__a {
+                display: inline-block;
+            }
+        }
+    }
+
+    &__title-txt {
+        padding-right: 12px;
+        color: @top_panel_links;
+    }
+
+    &__title {
+        padding: 0;
+    }
+
+    &__user-arrow {
+        color: @top_panel_links;
+    }
+}
+
+.ty-cr-link {
+    a {
+        &:hover {
+            text-decoration: underline;
+            color: @links_hover;
+        }
+    }
+}
+
+div.top-cart-content {
+    .ty-dropdown-box__title {
+        padding: 3px 11px 11px 8px;
+        border-radius: 0;
+
+        .ty-minicart-title {
+            color: @minicart_text;
+        }
+
+        &.open {
+            border: 1px solid @search_border;
+            border-bottom-color: transparent;
+            background: #fff;
+
+            &:hover {
+                border-bottom-color: transparent;
+            }
+        }
+
+        a {
+            white-space: normal;
+        }
+
+        &:hover {
+            border: 1px solid @search_border;
+            background: #fff;
+        }
+    }
+
+    .ty-minicart-title {
+        display: inline-block;
+        max-width: 140px;
+        padding-right: 10px;
+        vertical-align: middle;
+        color: @minicart_text;
+    }
+
+    .empty-cart {
+        font-size: 14px;
+    }
+
+    .ty-icon-down-micro {
+        display: inline-block;
+        color: @minicart_text;
+    }
+
+    .ty-dropdown-box__content {
+        border-color: @search_border;
+        border-radius: 0;
+    }
+
+    .ty-cart-items {
+        &__empty {
+            font-size: 15px;
+            color: @minicart_text;
+        }
+
+        &__list-item-desc {
+            a {
+                font-size: 14px;
+
+                &:hover {
+                    text-decoration: underline;
+                    color: @links_hover;
+                }
+            }
+        }
+
+        &__list-item-tools {
+            right: -14px;
+        }
+
+        &__list-item {
+            .ty-icon-cancel-circle {
+                color: @links_hover;
+            }
+        }
+    }
+}
+
+.ty-minicart-title {
+    padding-left: 14px;
+}

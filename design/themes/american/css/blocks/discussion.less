@@ -1,0 +1,31 @@
+.ty-discussion-post {
+    border-color: @owl_carousel_item;
+    background: #fff;
+
+    &__message {
+        font: normal 13px/22px Roboto, sans-serif;
+        color: @discussion_post_color;
+    }
+
+    &__author {
+        font: normal 13px/21px Roboto, sans-serif;
+        color: @discussion_post_name;
+    }
+
+    &__date {
+        font: normal 12px/21px Roboto, sans-serif;
+        color: @discussion_post_date;
+    }
+
+    &__rating {
+        margin-top: 5px;
+    }
+
+    .ty-caret-bottom .ty-caret-outer {
+        border-left-color: @owl_carousel_item;
+    }
+
+    .ty-mainbox-body &__buttons {
+        margin-bottom: 0;
+    }
+}

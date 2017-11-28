@@ -1,0 +1,64 @@
+.tygh-top-panel {
+    position: relative;
+    .box-shadow(0px 0px 10px @top_panel_border);
+
+    .ty-select-block {
+        top: 37px;
+        margin-top: 0;
+        border: 1px solid @dropdown_box_border;
+        background: #fff;
+        .box-shadow (0px 0px 7px @dropdown_box_border);
+
+        &__a {
+            padding: 8px 13px;
+            color: @top_panel_links;
+
+            .ty-icon-down-micro {
+                color: @top_panel_links;
+            }
+
+            &:hover {
+                background-color: #fff;
+            }
+
+            &.open {
+                position: relative;
+                z-index: 1023;
+                color: #000;
+                border: 1px solid @dropdown_box_border;
+                border-bottom-color: #fff;
+                background-color: #fff;
+                -moz-box-shadow: -2px -1px 1px @my_account_shadow, 2px -1px 1px @my_account_shadow;
+                -webkit-box-shadow: -2px -1px 1px @my_account_shadow, 2px -1px 1px @my_account_shadow;
+                box-shadow: -2px -1px 1px @my_account_shadow, 2px -1px 1px @my_account_shadow;
+
+                .ty-icon-down-micro {
+                    color: @top_panel_links;
+                }
+            }
+        }
+
+        &:after {
+            display: none;
+        }
+
+        &__list-a {
+            color: @top_panel_links;
+
+            &:hover {
+                text-decoration: underline;
+                color: @links_hover;
+                background: #fff;
+            }
+        }
+    }
+
+    .ty-dropdown-box__title {
+        padding: 7px 11px 13px 8px;
+    }
+
+    .top-languages,
+    .top-currencies {
+        margin-top: 6px;
+    }
+}

@@ -1,0 +1,127 @@
+.ty-btn {
+    .transition(0.4s);
+    font-size: 16px;
+    padding: 8px 25px;
+    text-transform: none;
+    border-radius: 3px;
+    text-shadow: 0px 1px 0px @buttons_shadow;
+    .gradient (@primary_button_light, @primary_button);
+
+    &:hover {
+        .gradient (@primary_button, @primary_button);
+    }
+}
+
+.ty-btn:hover,
+.ty-btn:active {
+    padding: 8px 25px;
+}
+
+.ty-btn__text {
+    padding-right: 5px;
+    padding-left: 5px;
+
+    &:hover,
+    &:active {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+}
+
+.ty-grid-list__control {
+    .ty-btn__big {
+        padding: 8px 25px;
+    }
+}
+
+.ty-btn__primary {
+    .gradient (@primary_button_light, @primary_button);
+    font-size: 16px;
+    border-radius: 3px;
+
+    &:hover {
+        .gradient (@primary_button, @primary_button);
+    }
+
+    &.ty-btn__add-to-cart {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+.ty-btn__secondary {
+    .gradient (@secondary_button_light, @secondary_button);
+    font-size: 16px;
+    border-radius: 3px;
+
+    &:hover {
+        .gradient (@secondary_button, @secondary_button);
+    }
+}
+
+.ty-btn__tertiary,
+.ty-checkout__register-cancel,
+.cm-dialog-closer,
+.ty-btn.cm-external-click {
+    .gradient (@primary_button_light, @primary_button);
+    font-size: 16px;
+    border-radius: 3px;
+
+    &:hover {
+        .gradient (@primary_button, @primary_button);
+    }
+}
+
+.buttons-container,
+.ty-checkout-buttons {
+    border-radius: 0;
+    background: none;
+}
+
+.ty-checkout-complete__buttons,
+.ty-discussion-post__buttons,
+.ty-profile-field__buttons,
+.ty-compare__button-empty,
+.ty-wish-list__buttons,
+.ty-gift-certificate__buttons {
+    border-top: 1px solid @border;
+}
+
+.ty-btn-go {
+    font-size: 0;
+    top: 6px;
+    right: 6px;
+    left: auto;
+    width: 31px;
+    height: 21px;
+    color: transparent;
+    border: none;
+    background: url(@arrow-right-noactive) no-repeat;
+    background-position: -411px -266px;
+}
+
+.ty-btn-go__icon {
+    font-size: 0;
+}
+
+@media (max-width: 767px) {
+    .ty-text-links-btn {
+        padding-bottom: 12px;
+        color: @font;
+        border: 1px solid #fff;
+        border-bottom: none;
+
+        &.open {
+            position: relative;
+            margin-bottom: -1px;
+            padding-bottom: 13px;
+            color: @font;
+            border-color: @dropdown_box_border;
+            border-bottom-color: transparent;
+            background: #fff;
+            -moz-box-shadow: -2px -1px 1px @my_account_shadow, 2px -1px 1px @my_account_shadow;
+            -webkit-box-shadow: -2px -1px 1px @my_account_shadow, 2px -1px 1px @my_account_shadow;
+            box-shadow: -2px -1px 1px @my_account_shadow, 2px -1px 1px @my_account_shadow;
+        }
+    }
+}

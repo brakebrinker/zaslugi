@@ -1,0 +1,54 @@
+#tygh_main_container {
+    overflow: hidden;
+}
+
+div.tygh-content {
+    background: @content_bg;
+
+    > div {
+        background: @content_bg;
+    }
+}
+
+.ty-mainbox-simple {
+    &-title {
+        font: normal 23px/20px Roboto, sans-serif;
+        margin-bottom: 23px;
+        color: @mainbox_simple_title;
+    }
+
+    &-container {
+        .ty-scroller-list__item {
+            border: 1px solid @owl_carousel_item;
+            border-right: none;
+            background: #fff;
+        }
+
+        .owl-item {
+            &:last-child {
+                .ty-scroller-list__item {
+                    border-right: none;
+                }
+            }
+        }
+    }
+}
+
+.ty-scroller-list {
+    &__description {
+        .product-title {
+            font: normal 15px/18px Roboto, sans-serif;
+            display: inline-block;
+            width: auto;
+            height: 40px;
+            padding: 5px 15px 28px;
+            white-space: normal;
+            color: @mainbox_simple_title;
+
+            &:hover {
+                text-decoration: underline;
+                color: @links_hover;
+            }
+        }
+    }
+}

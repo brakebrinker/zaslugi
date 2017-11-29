@@ -48,6 +48,7 @@
 }
 .no-touch .ty-text-links__a:hover {
     border-bottom: 2px solid #e40005;
+    text-decoration: none;
 }
 .top-quick-links .ty-text-links__item {
 	margin: 0;
@@ -194,7 +195,7 @@ input.ty-search-block__input {
     margin-bottom: 18px;
 }
 .ty-dropdown-box__title {
-    padding: 5px 20px;
+    padding: 5px 21px;
     border: 1px solid #000;
 }
 .ty-dropdown-box__title.open {
@@ -211,6 +212,10 @@ input.ty-search-block__input {
     color: #000;
 }
 
+.container-fluid.header-grid {
+    max-width: 100%;
+    padding: 0;
+}
 
 .tygh-header > div {
 	padding: 0 20px;

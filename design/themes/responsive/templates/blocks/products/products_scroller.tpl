@@ -21,8 +21,8 @@
     <div class="owl-theme ty-owl-controls">
         <div class="owl-controls clickable owl-controls-outside"  id="owl_outside_nav_{$block.block_id}">
             <div class="owl-buttons">
-                <div id="owl_prev_{$obj_prefix}" class="owl-prev"><i class="ty-icon-left-open-thin"></i></div>
-                <div id="owl_next_{$obj_prefix}" class="owl-next"><i class="ty-icon-right-open-thin"></i></div>
+                <div id="owl_prev_{$obj_prefix}" class="owl-prev"><img src="{$images_dir}/icons/home-carousel-prev.png" alt=""></div>
+                <div id="owl_next_{$obj_prefix}" class="owl-next"><img src="{$images_dir}/icons/home-carousel-next.png" alt=""></div>
             </div>
         </div>
     </div>

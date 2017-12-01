@@ -387,6 +387,7 @@ div.tygh-content > div {
 .daily-products .owl-item .ty-scroller-list__item {
     border: 1px solid #cfdede;
     margin: 0 12px;
+    background-color:  #fefefe;
 }
 .ty-btn__primary.ty-btn__add-to-cart {
     background-color:  #b40000;
@@ -395,6 +396,58 @@ div.tygh-content > div {
     background: -o-linear-gradient(0deg, #710000 0%, #b10000 100%);
     background: -ms-linear-gradient(0deg, #710000 0%, #b10000 100%);
     background: linear-gradient(0deg, #710000 0%, #b10000 100%);
+    color:  #ffffff;
+    font-size: 14px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+.ty-btn__primary.ty-btn__add-to-cart:hover {
+	background-color:  #b40000;
+	background: -webkit-linear-gradient(0deg, #b40000 0%, #b40000 100%);
+	background: -moz-linear-gradient(0deg, #b40000 0%, #b40000 100%);
+	background: -o-linear-gradient(0deg, #b40000 0%, #b40000 100%);
+	background: -ms-linear-gradient(0deg, #b40000 0%, #b40000 100%);
+	background: linear-gradient(0deg, #b40000 0%, #b40000 100%);
+}
+.daily-products .ty-cr-product-button {
+	display: none;
+}
+.ty-scroller-list__description .product-title {
+	font-size: 14px;
+}
+.ty-sidebox__body {
+    position: relative;
+}
+.ty-owl-controls {
+	position: static;
+}
+.owl-prev {
+    position: absolute;
+    left: 0;
+    top: 40%;
+    z-index: 100;
+}
+.owl-next {
+    position: absolute;
+    right: 0;
+    top: 40%;
+    z-index: 100;
+}
+.owl-theme .owl-controls-outside .owl-buttons div {
+    padding: 0;
+}
+
+.owl-items--full .ty-subcategories-block__item .ty-subcategories-block__a, .subcategories .ty-subcategories__item a {
+	border: 1px solid #d7d7d7;
+}
+.owl-items--full .ty-subcategories-block__item .ty-subcategories-block__a:hover, .subcategories .ty-subcategories__item a:hover {
+background-color:  #fad200;
+background: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0.27) 0%, rgba(255, 255, 255, 0.27) 100%);
+background: -moz-linear-gradient(90deg, rgba(0, 0, 0, 0.27) 0%, rgba(255, 255, 255, 0.27) 100%);
+background: -o-linear-gradient(90deg, rgba(0, 0, 0, 0.27) 0%, rgba(255, 255, 255, 0.27) 100%);
+background: -ms-linear-gradient(90deg, rgba(0, 0, 0, 0.27) 0%, rgba(255, 255, 255, 0.27) 100%);
+background: linear-gradient(0deg, rgba(0, 0, 0, 0.27) 0%, rgba(255, 255, 255, 0.27) 100%);
+box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.18);
 }
 
 @media (max-width: 979px) {

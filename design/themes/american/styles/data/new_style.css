@@ -342,11 +342,13 @@ div.tygh-content > div {
 .ty-sidebox.daily-products {
     margin-top: 47px;
 }
-.daily-products .ty-sidebox__title {
-	background: url(../media/images/daily-pr-bg.png) repeat-x left center;
+.daily-products .ty-sidebox__title,
+.button-none .ty-sidebox__title {
+	background: url(../media/images/daily-pr-bg.png) repeat-x left 12px;
 	margin-bottom: 30px;
 }
-.daily-products span.ty-sidebox__title-wrapper.hidden-phone {
+.daily-products span.ty-sidebox__title-wrapper.hidden-phone,
+.button-none span.ty-sidebox__title-wrapper.hidden-phone {
     border-width: 3px;
     border-color: #687e2c;
     border-style: solid;
@@ -364,7 +366,8 @@ div.tygh-content > div {
     text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.66);
     border-radius: 5px;
 }
-.daily-products span.ty-sidebox__title-wrapper.hidden-phone:before {
+.daily-products span.ty-sidebox__title-wrapper.hidden-phone:before,
+.button-none span.ty-sidebox__title-wrapper.hidden-phone:before {
 	content: "";
 	width: 44px;
 	height: 20px;
@@ -372,7 +375,8 @@ div.tygh-content > div {
 	background: url(../media/images/daily-pr-before-stars.png) no-repeat left center;
 	opacity: .6;
 }
-.daily-products span.ty-sidebox__title-wrapper.hidden-phone:after {
+.daily-products span.ty-sidebox__title-wrapper.hidden-phone:after,
+.button-none span.ty-sidebox__title-wrapper.hidden-phone:after {
 	content: "";
 	width: 44px;
 	height: 20px;
@@ -380,11 +384,17 @@ div.tygh-content > div {
 	background: url(../media/images/daily-pr-after-stars.png) no-repeat right center;
 	opacity: .6;
 }
-.daily-products .owl-carousel {
+.daily-products .owl-carousel,
+.button-none .owl-carousel,
+.homepage-on-sale .owl-carousel,
+.ty-subcategories-container .owl-carousel {
     padding: 0 20px;
     box-sizing: border-box;
 }
-.daily-products .owl-item .ty-scroller-list__item {
+.daily-products .owl-item .ty-scroller-list__item,
+.button-none .owl-item .ty-scroller-list__item,
+.homepage-on-sale .owl-item .ty-scroller-list__item,
+.ty-subcategories-container .owl-item .ty-scroller-list__item {
     border: 1px solid #cfdede;
     margin: 0 12px;
     background-color:  #fefefe;
@@ -409,8 +419,16 @@ div.tygh-content > div {
 	background: -ms-linear-gradient(0deg, #b40000 0%, #b40000 100%);
 	background: linear-gradient(0deg, #b40000 0%, #b40000 100%);
 }
-.daily-products .ty-cr-product-button {
+.daily-products .ty-cr-product-button,
+.button-none .ty-cr-product-button,
+.homepage-on-sale .ty-cr-product-button {
 	display: none;
+}
+.ty-sidebox.daily-products,
+.ty-sidebox.button-none,
+.homepage-on-sale,
+.ty-subcategories-container {
+    margin-top: 70px;
 }
 .ty-scroller-list__description .product-title {
 	font-size: 14px;
@@ -442,12 +460,248 @@ div.tygh-content > div {
 }
 .owl-items--full .ty-subcategories-block__item .ty-subcategories-block__a:hover, .subcategories .ty-subcategories__item a:hover {
 background-color:  #fad200;
-background: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0.27) 0%, rgba(255, 255, 255, 0.27) 100%);
-background: -moz-linear-gradient(90deg, rgba(0, 0, 0, 0.27) 0%, rgba(255, 255, 255, 0.27) 100%);
-background: -o-linear-gradient(90deg, rgba(0, 0, 0, 0.27) 0%, rgba(255, 255, 255, 0.27) 100%);
-background: -ms-linear-gradient(90deg, rgba(0, 0, 0, 0.27) 0%, rgba(255, 255, 255, 0.27) 100%);
-background: linear-gradient(0deg, rgba(0, 0, 0, 0.27) 0%, rgba(255, 255, 255, 0.27) 100%);
+background: -webkit-linear-gradient(0deg, #f7d100 0%, #f6f652 100%);
+background: -moz-linear-gradient(0deg, #f7d100 0%, #f6f652 100%);
+background: -o-linear-gradient(0deg, #f7d100 0%, #f6f652 100%);
+background: -ms-linear-gradient(0deg, #f7d100 0%, #f6f652 100%);
+background: linear-gradient(0deg, #f7d100 0%, #f6f652 100%);
 box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.18);
+}
+.ty-subcategories-container span.ty-sidebox__title-wrapper.hidden-phone{
+	background-color:  #ffd700;
+	background: -webkit-linear-gradient(0deg, #fcd000 0%, #fcf601 100%);
+	background: -moz-linear-gradient(0deg, #fcd000 0%, #fcf601 100%);
+	background: -o-linear-gradient(0deg, #fcd000 0%, #fcf601 100%);
+	background: -ms-linear-gradient(0deg, #fcd000 0%, #fcf601 100%);
+	background: linear-gradient(0deg, #fcd000 0%, #fcf601 100%);
+	color: #171616;
+	font-size: 24px;
+	font-weight: 400;
+	padding: 11px;
+	text-transform: uppercase;
+	border-radius: 5px;
+}
+.ty-subcategories-container .ty-sidebox__title {
+	background: url(../media/images/cat-pr-bg.png) repeat-x left 12px;
+	margin-bottom: 30px;
+}
+.ty-subcategories-container span.ty-sidebox__title-wrapper.hidden-phone:before {
+	content: "";
+	width: 23px;
+	height: 20px;
+	display: inline-block;
+	background: url(../media/images/cat-star.png) no-repeat left center;
+}
+.ty-subcategories-container span.ty-sidebox__title-wrapper.hidden-phone:after {
+	content: "";
+	width: 23px;
+	height: 20px;
+	display: inline-block;
+	background: url(../media/images/cat-star.png) no-repeat right center;
+}
+
+.homepage-on-sale .ty-sidebox__title {
+	background: url(../media/images/sale-pr-bg.png) repeat-x left 12px;
+	margin-bottom: 30px;
+}
+.homepage-on-sale span.ty-sidebox__title-wrapper.hidden-phone {
+    background-color:  #e70000;
+    background: -webkit-linear-gradient(0deg, #bc0500 0%, #e92c2b 100%);
+    background: -moz-linear-gradient(0deg, #bc0500 0%, #e92c2b 100%);
+    background: -o-linear-gradient(0deg, #bc0500 0%, #e92c2b 100%);
+    background: -ms-linear-gradient(0deg, #bc0500 0%, #e92c2b 100%);
+    background: linear-gradient(0deg, #bc0500 0%, #e92c2b 100%);
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 11px;
+    text-transform: uppercase;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.66);
+    border-radius: 5px;
+}
+.homepage-on-sale span.ty-sidebox__title-wrapper.hidden-phone:before {
+	content: "";
+	width: 23px;
+	height: 20px;
+	display: inline-block;
+	background: url(../media/images/sale-star.png) no-repeat left center;
+}
+.homepage-on-sale span.ty-sidebox__title-wrapper.hidden-phone:after {
+	content: "";
+	width: 23px;
+	height: 20px;
+	display: inline-block;
+	background: url(../media/images/sale-star.png) no-repeat right center;
+}
+.ty-simple-list .ty-discount-label {
+    top: 3px;
+    right: 15px;
+    left: auto;
+    width: 59px;
+    height: 59px;
+    border-radius: 50%;
+}
+.ty-simple-list .ty-discount-label {
+	top: 3px;
+	right: 15px;
+	left: auto;
+	width: 59px;
+	height: 59px;
+	border-radius: 50%;
+	background-color:  #9dd700;
+	background: -webkit-linear-gradient(0deg, #528b00 0%, #9cd500 100%);
+	background: -moz-linear-gradient(0deg, #528b00 0%, #9cd500 100%);
+	background: -o-linear-gradient(0deg, #528b00 0%, #9cd500 100%);
+	background: -ms-linear-gradient(0deg, #528b00 0%, #9cd500 100%);
+	background: linear-gradient(0deg, #528b00 0%, #9cd500 100%);
+}
+.ty-simple-list .ty-discount-label:before,
+.ty-simple-list .ty-discount-label:after {
+    width: 0;
+    height: 0;
+}
+.ty-discount-label__item {
+    font-size: 13px;
+    text-transform: uppercase;
+    font-size: 22.62px;
+    height: 59px;
+    line-height: 59px;
+    padding: 0 9px;
+}
+
+.homepage-news .ty-blog-text-links {
+    margin: 0;
+}
+.homepage-reviews .ty-scroller-discussion-list__item,
+.homepage-news .ty-scroller-discussion-list__item {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px 30px 30px;
+    border-width: 1px;
+    border-color: #e0e0e0;
+    border-style: solid;
+    margin-right: 41px;
+}
+.homepage-news .ty-scroller-discussion-list__item {
+	margin-right: 0px;
+	margin-left: 31px;
+}
+/*.homepage-reviews .ty-discount-label__item,
+.homepage-news .ty-discount-label__item {
+    text-transform: uppercase;
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 59px;
+    height: 59px;
+    text-align: center;
+    padding: 0 10px 0 10px;
+}*/
+.homepage-reviews .ty-discussion-post__date,
+.homepage-news .ty-blog-text-links__date {
+    font: normal 12px/21px Roboto, sans-serif;
+    float: left;
+    color: #f1fffe;
+    font-size: 15px;
+    font-weight: 100;
+    border-width: 1px;
+    border-color: #cccccc;
+    border-style: solid;
+    background-color: #707070;
+    padding: 5px 29px 2px 13px;
+    width: 50px;
+    word-wrap: break-word;
+    margin: 0;
+    margin-left: -35px;
+}
+.homepage-reviews .review-title,
+.homepage-news .review-title {
+    float: left;
+    color: #080808;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-width: 1px;
+    border-color: #cccccc;
+    border-style: solid;
+    background-color: #ffffff;
+    padding: 14px 26px 14px 12px;
+}
+.homepage-reviews .ty-discussion-post__rating {
+    margin-top: 5px;
+    float: left;
+    padding: 10px;
+}
+.homepage-reviews .ty-stars {
+    color: #fad200;
+}
+.homepage-reviews .ty-discussion-post__author,
+.homepage-news .ty-discussion-post__author {
+    width: 100%;
+    display: block;
+    clear: both;
+    color: #464343;
+    font-size: 20px;
+    padding: 20px 0 12px;
+}
+.homepage-reviews .ty-discussion-post,
+.homepage-news .ty-discussion-post {
+    background: #fff;
+    padding: 0;
+    border: none;
+    margin: 0;
+}
+.homepage-reviews .ty-discussion-post__message,
+.homepage-news .ty-discussion-post__message {
+    color: #464343;
+    font-size: 16px;
+}
+.homepage-reviews .ty-discussion-post__content a,
+.homepage-news .ty-discussion-post__content a {
+    display: block;
+    position: relative;
+    color: #464343;
+    font-size: 14px;
+    margin-top: 5px;
+    text-decoration: underline;
+}
+
+.footer-contacts {
+    max-width: 520px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: -33px;
+}
+.footer-contacts h2 span {
+    color: #202020;
+    font-size: 24px;
+    text-align: center;
+    padding: 0 30px;
+    background-color: #fff;
+}
+.footer-contacts h2 {
+	text-align: center;
+}
+.home-contacts-wrapper {
+    border: 1px solid #e0e0e0;
+}
+
+.ty-footer-menu {
+    background-color: #e6e6e6;
+    margin-top: 54px;
+}
+.footer-logo.ty-float-left {
+    padding-top: 9px;
+}
+.footer-menu-shop {
+    max-width: 120px;
+    margin: 0 auto;
+    float: none;
+    text-align: left;
+}
+.footer-menu-shop .ty-text-links__a {
+    padding-left: 0;
+}
+.footer-menu-shop .ty-text-links__item {
+	margin: 0;
 }
 
 @media (max-width: 979px) {

@@ -23,30 +23,28 @@
 
         {foreach from=$discussion.posts item=post}
             <div class="ty-discussion-post__content ty-scroller-discussion-list__item">
-                {hook name="discussion:items_list_row"}
-                <a href="{"discussion.view?thread_id=`$discussion.thread_id`&post_id=`$post.post_id`"|fn_url}#post_{$post.post_id}">
-                    <div class="ty-discussion-post {cycle values=", ty-discussion-post_even"}" id="post_{$post.post_id}">
-
-                        {if $discussion.type == "C" || $discussion.type == "B"}
-                        <div class="ty-discussion-post__message">{$post.message|truncate:100|nl2br nofilter}</div>
-                        {/if}
-
-                        <span class="ty-caret-bottom"><span class="ty-caret-outer"></span><span class="ty-caret-inner"></span></span>
-                    
-                    </div>
-                </a>
-
-                <span class="ty-discussion-post__author">{$post.name}</span>
                 <span class="ty-discussion-post__date">{$post.timestamp|date_format:"`$settings.Appearance.date_format`"}</span>
+                <div class="review-title">Отзывы</div>
+                {hook name="discussion:items_list_row"}
                 {if $discussion.type == "R" || $discussion.type == "B" && $post.rating_value > 0}
                     <div class="clearfix ty-discussion-post__rating">
                         {include file="addons/discussion/views/discussion/components/stars.tpl" stars=$post.rating_value|fn_get_discussion_rating}
                     </div>
                 {/if}
+                <span class="ty-discussion-post__author">{$post.name}</span>
+                <div class="ty-discussion-post {cycle values=", ty-discussion-post_even"}" id="post_{$post.post_id}">
+
+                    {if $discussion.type == "C" || $discussion.type == "B"}
+                    <div class="ty-discussion-post__message">{$post.message nofilter}</div>
+                    {/if}
+
+                    <!-- <span class="ty-caret-bottom"><span class="ty-caret-outer"></span><span class="ty-caret-inner"></span></span> -->
+                
+                </div>
+                <a href="{"discussion.view?thread_id=`$discussion.thread_id`&post_id=`$post.post_id`"|fn_url}#post_{$post.post_id}">Подробнее...</a>
                 {/hook}
             </div>
         {/foreach}
-
         </div>
     </div>
 </div>

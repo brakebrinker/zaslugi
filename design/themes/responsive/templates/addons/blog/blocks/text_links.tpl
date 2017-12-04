@@ -2,7 +2,7 @@
 
 {assign var="parent_id" value=$block.content.items.parent_page_id}
 {if $items}
-<div class="ty-blog-text-links">
+<div class="ty-blog-text-links hidden-phone">
     <!-- <ul> -->
     {foreach from=$items item="page" name="fe_blog"}
         <div class="ty-discussion-post__content ty-scroller-discussion-list__item">
@@ -31,5 +31,8 @@
             {include file="buttons/button.tpl" but_href="pages.view?page_id=`$parent_id`" but_text=__("view_all") but_role="text" but_meta="ty-btn__secondary blog-ty-text-links__button"}
         </div>
     {/if} -->
+</div>
+<div class="ty-blog-text-links visible-phone">
+    <a href="/article"><div class="review-title">Новости</div></a>
 </div>
 {/if}

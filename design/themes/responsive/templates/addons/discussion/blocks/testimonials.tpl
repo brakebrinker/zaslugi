@@ -17,7 +17,7 @@
     </div>
 {/if}
 
-<div class="ty-mb-l">
+<div class="ty-mb-l hidden-phone">
     <div class="ty-scroller-discussion-list">
         <div id="scroll_list_{$block.block_id}" class="owl-carousel ty-scroller-list">
 
@@ -47,6 +47,9 @@
         {/foreach}
         </div>
     </div>
+</div>
+<div class="ty-mb-l visible-phone">
+    <a href="/index.php?dispatch=discussion.view&thread_id=1"><div class="review-title">Отзывы</div></a>
 </div>
 
 {include file="common/scroller_init_with_quantity.tpl" prev_selector="#owl_prev_`$obj_prefix`" next_selector="#owl_next_`$obj_prefix`"}

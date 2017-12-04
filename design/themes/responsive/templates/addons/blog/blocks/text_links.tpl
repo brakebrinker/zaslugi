@@ -11,7 +11,7 @@
             {hook name="discussion:items_list_row"}
             <span class="ty-discussion-post__author">{$page.page}</span>
             <div class="ty-discussion-post {cycle values=", ty-discussion-post_even"}" id="post_{$post.post_id}">
-                <div class="ty-discussion-post__message">{$page.page}</div>
+                <div class="ty-discussion-post__message">{$page.spoiler nofilter}</div>
                 {if $discussion.type == "C" || $discussion.type == "B"}
                 <!-- <div class="ty-discussion-post__message">{$page.page}</div> -->
                 {/if}

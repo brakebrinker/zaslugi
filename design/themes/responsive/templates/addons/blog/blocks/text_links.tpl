@@ -6,7 +6,7 @@
     <!-- <ul> -->
     {foreach from=$items item="page" name="fe_blog"}
         <div class="ty-discussion-post__content ty-scroller-discussion-list__item">
-            <span class="ty-blog-text-links__date">{$page.timestamp|date_format:$settings.Appearance.date_format}</span>
+            <span class="ty-blog-text-links__date">{$page.timestamp|date_format:"%m/%d %Y"}</span>
             <div class="review-title">Новости</div>
             {hook name="discussion:items_list_row"}
             <span class="ty-discussion-post__author">{$page.page}</span>
@@ -16,7 +16,7 @@
                 <!-- <div class="ty-discussion-post__message">{$page.page}</div> -->
                 {/if}
             </div>
-<!--             <pre>{$page|@print_r} </pre> -->
+            <!-- <pre>{$page|@print_r} </pre> -->
             <a href="{"pages.view?page_id=`$page.page_id`"|fn_url}">Подробнее...</a>
             {/hook}
         </div>

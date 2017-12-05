@@ -1155,6 +1155,10 @@ box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.18);
     .for-customers .ty-wysiwyg-content {
         text-align: center;
     }
+    .grid-list .ty-grid-list__control .ty-qty-out-of-stock {
+        padding-top: 0px;
+        padding-bottom: 5px;
+    }
 }
 @media (max-width: 479px) {
     .ty-dropdown-box__content {

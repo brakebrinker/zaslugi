@@ -23,7 +23,7 @@
 
         {foreach from=$discussion.posts item=post}
             <div class="ty-discussion-post__content ty-scroller-discussion-list__item">
-                <span class="ty-discussion-post__date">{$post.timestamp|date_format:"`$settings.Appearance.date_format`"}</span>
+                <span class="ty-discussion-post__date">{$post.timestamp|date_format:"%m/%d %Y"}</span>
                 <div class="review-title">Отзывы</div>
                 {hook name="discussion:items_list_row"}
                 {if $discussion.type == "R" || $discussion.type == "B" && $post.rating_value > 0}
